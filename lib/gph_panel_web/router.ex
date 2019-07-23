@@ -9,10 +9,10 @@ defmodule GphPanelWeb.Router do
     pipe_through :api
   end
 
-  if Mix.env == :dev do
+  if Mix.env() == :dev do
     forward "/graphiql",
-      Absinthe.Plug.GraphiQL,
-      schema: GphPanelWeb.Schema,
-      interface: :simple
+            Absinthe.Plug.GraphiQL,
+            schema: GphPanelWeb.Schema,
+            interface: :simple
   end
 end

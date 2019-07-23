@@ -40,7 +40,7 @@ defmodule GphPanel.MixProject do
 
       # GraphQL
       {:absinthe, "~> 1.4"},
-      {:absinthe_plug, "~> 1.4"},
+      {:absinthe_plug, "~> 1.4"}
     ]
   end
 end
